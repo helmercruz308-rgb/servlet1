@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.1" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_1.xsd">
+    <servlet>
+        <servlet-name>NewServlet1</servlet-name>
+        <servlet-class>servlet.NewServlet1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegistroServlet</servlet-name>
+        <servlet-class>controlador.RegistroServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegistroPacienteServlet</servlet-name>
+        <servlet-class>controlador.RegistroPacienteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewServlet1</servlet-name>
+        <url-pattern>/NewServlet1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegistroServlet</servlet-name>
+        <url-pattern>/RegistroServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegistroPacienteServlet</servlet-name>
+        <url-pattern>/RegistroPacienteServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
